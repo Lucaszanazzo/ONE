@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<h1>Programa Calcular Puntos de Torneos de Futbol</h1>
+
+<script>
+    function saltarLinea(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+    }
+    var nombre = prompt("Ingrese Nombre del Equipo: ");
+    var victorias = parseInt (prompt("Ingrese la cantidad de Victorias: "));
+    var empates = parseInt(prompt("Ingrese la cantidad de Empates: "));
+
+    var totalPuntos = (victorias * 3) + empates; 
+
+    imprimir("Los puntos del equipo "+ nombre +" en el torneo son: " + totalPuntos); 
+
+    if (totalPuntos > 25){
+        imprimir("El equipo esta mejor que el año pasado")
+    }
+
+    
+    if (totalPuntos < 25){
+        imprimir("El equipo esta peor que el año pasado")
+    }
+
+    
+    if (totalPuntos == 25){
+        imprimir("El equipo esta igual que el año pasado")
+    }
+
+ 
+</script>
