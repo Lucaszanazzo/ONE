@@ -1,0 +1,52 @@
+<meta charset="UTF-8">
+
+<h1>Estadisticas de los Navegadores</h1>
+
+<p>En 2009: 6% Chrome, 47% Firefox, 41% Internet Explorer/Edge*, 3% Safari, 3% Otros.<br>
+    En 2019: 81% Chrome, 9% Firefox, 3% Internet Explorer/Edge*, 3% Safari, 4% Otros.</p>
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    function dibujarRectangulo(x, y, base, altura, color) {
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+        pincel.fillStyle=color;
+        pincel.fillRect(x,y, base, altura);
+        pincel.strokeStyle="black";
+        pincel.strokeRect(x,y, base, altura);
+    }
+
+    function escribirTexto(x , y, texto) {
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+        pincel.font="15px Georgia";
+        pincel.fillStyle="black";
+        pincel.fillText(texto, x, y);    
+    }
+    function dibujarbarra(x,serie,color){
+        var alto = 0;
+        for(var i=0; i< serie.length; i++){
+
+            dibujarRectangulo(x,100+alto,45,serie[i], color[i]);
+            alto += serie[i];
+        }
+       
+    }
+
+
+    //Aquí viene el texto faltante
+    var serie2009 = [6, 47, 41, 3, 3];
+    var serie2019 = [81, 9, 3, 3, 4];
+    var colores = ["blue","green","yellow", "red","gray"];
+    //barras
+    dibujarbarra(90, serie2009, colores);
+    dibujarbarra(190, serie2019, colores);
+    //textos
+    escribirTexto(100,80, "2009");
+    escribirTexto(200,80, "2019");
+
+</script>

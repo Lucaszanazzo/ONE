@@ -16,14 +16,24 @@
     }
 
     var numeroPensado = Math.round(Math.random()*10);
-    var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"))
+    var intentos = 3 ;
+    var contador = 1;
 
-    if(numeroPensado == numeroLanzado){
-        imprimir("usted acertó")
-    }else if (numeroLanzado > numeroPensado){
-            imprimir("usted erró, el número pensado era menor que tu número");
-    }else{
-        imprimir("usted erró, el número pensado era mayor que tu número");
+    while(contador <= intentos){
+
+        var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"))
+
+        if(numeroPensado == numeroLanzado){
+                alert("usted acertó, en el intento " + contador+ " el numero era "+ numeroLanzado)
+                break; 
+
+        }else{
+                alert("usted erró");
+            }
+
+        contador++;
+         
     }
+    imprimir("El numero era: " + numeroPensado)
 
 </script>
