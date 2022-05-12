@@ -5,9 +5,14 @@
 
     <head>
         <meta charset="UTF-8"> 
+        <meta name="viewport" content="width-device-width">
         <title>Barberia Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         
-        <link rel="stylesheet" href="style-home.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Serif&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 
     </head>
  
@@ -27,33 +32,53 @@
         
         </header>
 
-        <img id="banner" src="banner/banner.jpg" alt="imagen-barberia">
+        <img class="banner" src="banner/banner.jpg" alt="imagen-barberia">
 
-        <div class="principal">
-            <h2 class="titulo-centralizado">Sobre la Barbería Alura</h2>
+        <main class="main-home">
 
-            <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong>  trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente. </p>
+            <section class="principal">
+                <h2 class="titulo-principal">Sobre la Barbería Alura</h2>
 
-            <p id="mision"><em> Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>.</em></p>
+                <img class="utensillos" src="imagenes/utensilios[1].jpg" alt="Utensillos">
+                <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong>  trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente. </p>
 
-            <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
+                <p id="mision"><em> Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes"</strong>.</em></p>
 
-        </div>
+                <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
+
+            </section>
+
+            <section class="mapa">
+                <h3 class="titulo-principal">Nuestra Ubicacion</h3>
+                <p>Nuestro establecimiento esta ubicado en el corazon de la ciudad.</p>
+                <div class="mapa-contenido">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28317.673117897422!2d-58.96146195!3d-27.478313149999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450d470ff128ad%3A0x7f44759a847703!2sGrowild%20Natural%20Park!5e0!3m2!1ses!2sar!4v1652359661573!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
         
 
-        <div class="difereniales">
-            <h3 class="titulo-centralizado">Diferenciales </h3>
+            <section class="diferenciales">
+                <h3 class="titulo-principal">Diferenciales </h3>
 
-            <ul>
-                 <li class="items">Atencion personalizada a los clientes</li>
-                 <li class="items">Espacio diferenciado</li>
-                 <li class="items">localizacion</li>
-                 <li class="items">Profesionales calificados</li>
-            </ul>
+                <div class="contenidio-diferenciales">
+                    <ul class="lista-diferenciales">
+                        <li class="items">Atencion personalizada a los clientes</li>
+                        <li class="items">Espacio diferenciado</li>
+                        <li class="items">localizacion</li>
+                        <li class="items">Profesionales calificados</li>
+                        <li class="items">Puntualidad</li>
+                        <li class="items">Limpieza</li>
+                    </ul><img src="diferenciales/diferenciales.jpg" class="imagen-diferenciales">
+                </div>
+                <div class="video">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+            </section>
 
-            <img src="diferenciales/diferenciales.jpg" class="imagenDiferenciales">
+            
 
-        </div>
+        </main>
 
         <footer>
             <img src="imagenes/logo-blanco.png" alt="">
