@@ -1,0 +1,54 @@
+body{
+    background: #E9ECF8;
+}
+
+.imagen-logo{
+    /* Logo */
+    width: 120px;
+    height: 48px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.mensaje{
+    /* Ingrese el texto aqui */
+    position: absolute;
+    width: 577px;
+    height: 250px;
+    left: 200px;
+    top: 168px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    
+    /* identical to box height, or 48px */
+}
+
+.textoRevelado{
+    /* Rectangle 1 */
+    position: absolute;
+    width: 400px;
+    height: 700px;
+    left: 850px;
+    top: 40px;
+
+    /* White */
+    background: #FFFFFF;
+
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+.muñeco{
+    /* Muñeco */
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 1032px;
+    top: 283px;
+}
